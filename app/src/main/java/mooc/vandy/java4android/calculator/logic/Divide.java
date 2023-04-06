@@ -5,4 +5,15 @@ package mooc.vandy.java4android.calculator.logic;
  */
 public class Divide {
     // TODO - add your solution here.
+    private int mArgumentOne = 0;
+    private int mArgumentTwo = 0;
+
+    public Divide(int argumentOne, int argumentTwo) {
+        mArgumentOne = argumentOne;
+        mArgumentTwo = argumentTwo;
+    }
+
+    public String toString() {
+        return String.valueOf(mArgumentOne / mArgumentTwo) + " R:" + String.valueOf(mArgumentOne % mArgumentTwo);
+    }
 }
